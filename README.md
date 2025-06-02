@@ -1,5 +1,3 @@
-# ha-immich
-
 # Immich Home Assistant Integration
 
 This is a custom integration for Home Assistant that allows you to monitor Immich statistics directly in Home Assistant.
