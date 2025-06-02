@@ -1,0 +1,32 @@
+{
+  "step": {
+    "user": {
+      "title": "Conectare la server Immich",
+      "description": "Introdu datele pentru serverul Immich.",
+      "data": {
+        "api_url": "URL API Immich",
+        "api_key": "Cheie API Immich",
+        "scan_interval": "Interval scanare (minute)"
+      },
+      "errors": {
+        "cannot_connect": "Nu s-a putut conecta la serverul Immich: {err}"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opțiuni Immich",
+        "description": "Modifică datele de conectare sau intervalul de scanare.",
+        "data": {
+          "api_url": "URL API Immich",
+          "api_key": "Cheie API Immich",
+          "scan_interval": "Interval scanare (minute)"
+        }
+      }
+    }
+  },
+  "abort": {
+    "already_configured": "Acest server Immich este deja configurat."
+  }
+}

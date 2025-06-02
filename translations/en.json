@@ -1,0 +1,32 @@
+{
+  "step": {
+    "user": {
+      "title": "Connect to Immich server",
+      "description": "Enter your Immich server details.",
+      "data": {
+        "api_url": "Immich API URL",
+        "api_key": "Immich API Key",
+        "scan_interval": "Scan interval (minutes)"
+      },
+      "errors": {
+        "cannot_connect": "Could not connect to Immich server: {err}"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Immich Options",
+        "description": "Edit connection details or scan interval.",
+        "data": {
+          "api_url": "Immich API URL",
+          "api_key": "Immich API Key",
+          "scan_interval": "Scan interval (minutes)"
+        }
+      }
+    }
+  },
+  "abort": {
+    "already_configured": "This Immich server is already configured."
+  }
+}

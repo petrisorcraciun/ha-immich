@@ -1,0 +1,6 @@
+{
+  "total_photos": "mdi:image-multiple",
+  "total_videos": "mdi:video",
+  "occupied_space": "mdi:database",
+  "free_space": "mdi:database-outline"
+}

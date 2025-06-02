@@ -1,0 +1,14 @@
+{
+  "domain": "ha-immich",
+  "name": "Immich Integration",
+  "version": "1.0.0",
+  "documentation": "https://github.com/petrisorcraciun/ha-immich",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [
+    "@petrisorcraciun"
+  ],
+  "iot_class": "local_polling",
+  "integration_type": "hub",
+  "config_flow": true
+}
