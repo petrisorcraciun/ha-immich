@@ -1,5 +1,3 @@
-# ha-immich
-
 # Immich Home Assistant Integration
 
 This is a custom integration for Home Assistant that allows you to monitor Immich statistics directly in Home Assistant.
@@ -20,11 +18,11 @@ This is a custom integration for Home Assistant that allows you to monitor Immic
 
 > **ℹ️ This integration requires no extra Python dependencies.**
 
-<a href="https://www.buymeacoffee.com/petrisorcraciun"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=petrisorcraciun&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" /></a>
-
 ## Uninstall
 - Delete the `custom_components/ha-immich` folder from your Home Assistant setup.
 - Restart Home Assistant.
 
 ## Support
 For issues or questions, open an issue on GitHub or contact the developer.
+
+<a href="https://www.buymeacoffee.com/petrisorcraciun"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=petrisorcraciun&button_colour=FFDD00&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=ffffff" /></a>
