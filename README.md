@@ -4,7 +4,11 @@ This is a custom integration for Home Assistant that allows you to monitor Immic
 
 ![Sensors Example](sensors.png)
 
-## Installation
+### HACS Installation
+
+[![Add Integration in Home Assistant](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=petrisorcraciun&repository=ha-immich&category=integration)
+
+## Custom Installation
 
 1. **Copy** the `ha-immich` folder to your Home Assistant `custom_components` directory.
 2. **Restart** Home Assistant.
@@ -24,4 +28,4 @@ This is a custom integration for Home Assistant that allows you to monitor Immic
 - Restart Home Assistant.
 
 ## Support
-For issues or questions, open an issue on GitHub or contact the developer.
+If you need help or encounter an issue, please open a ticket on GitHub.
