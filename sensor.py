@@ -105,8 +105,7 @@ class ImmichSensor(CoordinatorEntity):
     def state(self) -> Optional[Any]:
         value = self.coordinator.data.get(self.sensor_type)
         if value is None:
-            error = self.coordinator.data.get("attributes", {}).get("error")
-            return error or "no data"
+            return None
         if self.sensor_type in ["occupied_space", "free_space"] and value is not None:
             return round(value / (1024 ** 3), 2)
         return value
@@ -141,7 +140,7 @@ class ImmichApiStatusSensor(CoordinatorEntity):
         return {"error": data.get("attributes", {}).get("error", "")}
 
 class ImmichUserSensor(CoordinatorEntity):
-    def __init__(self, coordinator: DataUpdateCoordinator, user_id: str, user_name: str, sensor_type: str, name: str, unit: Optional[str] = None, enabled_default: bool = True) -> None:
+    def __init__(self, coordinator: DataUpdateCoordinator, user_id: str, user_name: str, sensor_type: str, name: str, unit: Optional[str] = None, enabled_default: bool = False) -> None:
         super().__init__(coordinator)
         self.user_id = user_id
         self.user_name = user_name
@@ -157,8 +156,7 @@ class ImmichUserSensor(CoordinatorEntity):
         user = self.coordinator.data.get("users", {}).get(self.user_id, {})
         value = user.get(self.sensor_type)
         if value is None:
-            error = self.coordinator.data.get("attributes", {}).get("error")
-            return error or "no data"
+            return None 
         if self.sensor_type in ["usage", "usagePhotos", "usageVideos", "quota"] and value is not None:
             return round(value / (1024 ** 3), 2)
         return value
@@ -176,7 +174,7 @@ class ImmichUserSensor(CoordinatorEntity):
 async def async_setup_entry(hass, entry, async_add_entities):
     api_url = entry.data["api_url"]
     api_key = entry.data["api_key"]
-    scan_interval = entry.data.get("scan_interval", 5)
+    scan_interval = entry.data.get("scan_interval", 60)
 
     coordinator = DataUpdateCoordinator(
         hass,
