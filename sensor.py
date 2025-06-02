@@ -11,13 +11,11 @@ from .const import STATISTICS_ENDPOINT
 
 _LOGGER = logging.getLogger(__name__)
 
-ICONS = None
 ICONS_PATH = os.path.join(os.path.dirname(__file__), "icons.json")
+with open(ICONS_PATH, encoding="utf-8") as f:
+    ICONS = json.load(f)
+
 def get_icons() -> Dict[str, str]:
-    global ICONS
-    if ICONS is None:
-        with open(ICONS_PATH, encoding="utf-8") as f:
-            ICONS = json.load(f)
     return ICONS
 
 def _get_icon(sensor_type: str) -> str:
