@@ -18,7 +18,7 @@ This is a custom integration for Home Assistant that allows you to monitor Immic
 ## Requirements
 - Home Assistant (core or OS)
 - A running Immich server
-- An API key generated from Immich ([see Immich documentation](https://immich.app/docs/features/api-keys/))
+- An API key generated from Immich ([see Immich documentation](https://immich.app/docs/features/command-line-interface/))
 
 > **ℹ️ This integration requires no extra Python dependencies.**
 
